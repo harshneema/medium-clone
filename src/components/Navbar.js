@@ -6,11 +6,8 @@ import hamb from '../store/bars-solid.svg'
 
 const Navbar = () => {
 
-    const [isOpen ,Opentoggle] = useState(false);
+    const [isOpen ,setOpen] = useState(false);
 
-    function toggle() {
-       (Opentoggle(!isOpen))
-    }
     return (
         <div className='stick'>
             <div className='Navbar'>
@@ -27,15 +24,19 @@ const Navbar = () => {
                 </div>
                
                 <div className='responsive'>
-                     <img src={hamb} alt="medium" className='hamb' onClick={() => Opentoggle(!isOpen)}/>
-                 {isOpen ? <div>
+                <div style={{"display":"flex", "justifyContent":"space-between"}}>
+                    <img src={mlogo} alt="medium" className='mlogo2'/>
+                    <img src={hamb} alt="medium" className='hamb' onClick={() => setOpen(!isOpen)}/>
+                </div>
+                    
+                 {isOpen ? <div> 
                     <div className='resp-menu-2'>
-                     <span className='options'><a className='links' href="/lo">Our Story</a></span>
-                <span className='options'><a className='links' href="/lo">Membership</a></span>
-                <span className='options'><a className='links' href="/lo">Write</a></span>
-                <span className='options'><a className='links' href="/lo">Sign in</a></span>
-                <span className='options'><a className='links' href="/lo"><button className='start'>Get started</button></a></span>
-                     </div>
+                        <span className='options'><a className='links' href="/lo">Our Story</a></span>
+                        <span className='options'><a className='links' href="/lo">Membership</a></span>
+                        <span className='options'><a className='links' href="/lo">Write</a></span>
+                        <span className='options'><a className='links' href="/lo">Sign in</a></span>
+                        <span className='options'><a className='links' href="/lo"><button className='start'>Get started</button></a></span>
+                    </div> 
                  </div> : <div></div>}   
                     
                 </div>

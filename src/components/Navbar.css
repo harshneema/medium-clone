@@ -1,7 +1,8 @@
-.mlogo{
+.mlogo , .mlogo2{
     width: auto;
     height: 50px;
 }
+.mlogo2{display: none;}
 .hamb{
     display: none;
 }
@@ -9,21 +10,6 @@
     display: none;
 }
 
-@media only screen and (max-width: 1000px) {
-    .hamb{
-        display: block;
-        width: 40px;
-    height: 40px;
-    padding: 0 5px;
-    }
-    .resp-menu{
-        display: none;
-    }
-    /* .resp-menu-2{
-        display: flex;
-        flex-direction: column;
-    } */
-  }
 .stick{
     position: sticky;
     top: 0;
@@ -59,3 +45,48 @@
 .options{
     padding: 0 10px
 }
+
+@media only screen and (max-width: 1000px) {
+    .hamb{
+        display: block;
+        width: 40px;
+    height: 40px;
+    padding: 0 5px;
+    top: 0;
+    right: 0;
+    }
+    .sticky-content{
+        top:% !important;
+    }
+    .Navbar{
+        width: 100%;
+        justify-content: center !important; 
+    }
+    .menu{
+        width: 80%;
+    }
+    .mlogo{
+        display: none;
+    }
+    .mlogo2{
+        display: block;
+    }
+    .resp-menu{
+        display: none;
+    }
+    .resp-menu-2{
+        display: flex;
+        flex-direction: column;  
+        padding: 2% 0;
+    }
+    .options{
+        width: 100%;
+        font-size: x-large;
+        padding: 1% 0 !important;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
