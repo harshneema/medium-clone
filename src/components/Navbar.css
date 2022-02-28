@@ -1,0 +1,61 @@
+.mlogo{
+    width: auto;
+    height: 50px;
+}
+.hamb{
+    display: none;
+}
+.resp-menu-2{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamb{
+        display: block;
+        width: 40px;
+    height: 40px;
+    padding: 0 5px;
+    }
+    .resp-menu{
+        display: none;
+    }
+    /* .resp-menu-2{
+        display: flex;
+        flex-direction: column;
+    } */
+  }
+.stick{
+    position: sticky;
+    top: 0;
+}
+.Navbar{
+    margin: 0px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFC017;
+    padding: 10px 50px 20px ;
+    border-bottom: 1px solid black;
+    
+}
+
+.start{
+    background-color: black;
+    color: aliceblue;
+    border: 1px solid black;
+    border-radius: 99em;
+    padding: 8px 18px 9px;
+    font-size: medium;
+}
+
+.links{
+    text-decoration: none;
+    color:black;
+}
+.menu{
+    padding-top: inherit;
+}
+
+.options{
+    padding: 0 10px
+}
